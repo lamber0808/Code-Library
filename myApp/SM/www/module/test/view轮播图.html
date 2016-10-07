@@ -1,0 +1,18 @@
+<style>
+  .box{
+    height: 100%;
+  }
+</style>
+<ion-slide-box>
+  <ion-slide>
+    <div class="box assertive-bg">
+      <h1>BLUE</h1>
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div class="box royal-bg"><h1>YELLOW</h1></div>
+  </ion-slide>
+  <ion-slide on-slide-changed="slideHasChanged(index)">
+    <div class="box dark-bg"><h1>PINK</h1></div>
+  </ion-slide>
+</ion-slide-box>

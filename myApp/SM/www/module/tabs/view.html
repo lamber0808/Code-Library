@@ -1,0 +1,18 @@
+<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+  <ion-tab title="首页" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/tabs/home">
+    <!-- 这里的name值 就相当于ui-view="tab-home"指令对应的值 -->
+    <ion-nav-view name="tabs-home"></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="分类" icon-off="ion-ios-paper-outline" icon-on="ion-ios-paper" href="#/tabs/category">
+    <ion-nav-view name="tabs-category">
+
+    </ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="购物车" icon-off="ion-ios-cart-outline" icon-on="ion-ios-cart" href="#/cart" badge="obj_cartCount.count" badge-style="badge-assertive">
+    <ion-nav-view name="tabs-cart"></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="我" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/tabs/account">
+    <ion-nav-view name="tabs-account"></ion-nav-view>
+  </ion-tab>
+</ion-tabs>

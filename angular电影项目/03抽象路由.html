@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+</head>
+<body ng-app="myapp">
+<div ui-view></div>
+</body>
+
+</html>
+<script>
+    var app = angular.module('myapp',['ui.router']);
+    //路由重定向 $urlRouterProvider
+    app.config(function ($stateProvider,$urlRouterProvider) {
+        $stateProvider
+                .state('tabs',{
+                 //公共的 相当于use用法，不过后面使用抽象路由需要点tabs.home
+                url:'/tabs',
+                abstract:true,//表示使用抽象路由,就是提取公共路由;
+                template:'<div ui-view></div>' +
+                '<ul>' +
+                '<li><a href="#/tabs/home">home</a></li>' +
+                '<li><a href="#/tabs/cart">cart</a></li>' +
+                '</ul>'
+                 })
+                //不加tabs表示不使用抽象路由,
+                .state('tabs.home',{
+                    url:'/home',          //注意是#后面的内容；
+                    template:'<h1>home1</h1>'
+                })
+
+                //加上tabs以后变成抽象路由
+                .state('tabs.cart',{
+                    url:'/cart',
+                    template:'<h2>cart</h2>'
+                });
+        $urlRouterProvider.otherwise('/tabs/cart')
+    })
+</script>

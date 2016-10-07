@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="zh-CN">
+<title>jQuery左侧固定悬浮纵向定位单页面切换代码 - xw素材网</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		/* css 重置 */
+		*{margin:0; padding:0; list-style:none; }
+		body{ color:#333;font:14px/150% "Microsoft YaHei", Arial,"宋体",sans-serif; text-align:center; background:#DCDCDC;  }
+		img{ border:0;  }
+		a{ text-decoration:none; color:#333;  }
+		a:hover{ text-decoration:underline;   }
+
+		/* 顶部导航条 - 可无视 */
+		#header{ position:fixed; _position:absolute; z-index:1; top:0; left:0; width:100%;  height:32px; line-height:30px; color:#fff; text-align:left; overflow:hidden; background: #333;}
+		#header span{ float:right; padding-right:20px;   }
+		#header span a{ margin:0 10px; color:#fff; text-decoration:underline;   }
+		#header h1{ padding:0 10px; font-size:14px; float:left;  }
+		#header .change{ text-align:center; position:absolute; top:0; left:50%; width:280px; margin-left:-140px;   height:32px;   }
+		#header .change a{ color:#fff; display:inline-block; *display:inline; zoom:1; padding:0 10px; background:#666; height:32px; line-height:32px; margin:0 5px;     }
+		#header .change a:hover{ text-decoration:none; color:#ff0;  }
+		#header .change a.on{ background:#e60;  }
+		#footer{ height:34px; line-height:34px;}
+	</style>
+	<style type="text/css">
+		html{  overflow-x:hidden; overflow-y:hidden;  _background-image:url(about:blank); _background-attachment:fixed; }/* html加上这段代码用于取消ie6滚动时候元素震动bug */
+		
+		#content{ position:relative; z-index:0; }
+		.article{ background:#04caca; text-align:left; }
+		.article dt{ width:60%; padding-top:50px;   margin:0 auto; font:normal 40px/200% "Microsoft YaHei"; color:#fff; text-shadow:1px 1px 1px #666;  }
+		.article dt em{ font:italic 80px/150% Verdana; margin-right:10px;  }
+		.article dd{ position:relative; z-index:1; width:60%;  margin:20px auto 0 auto;   }
+		.article dd .con{ position:relative; z-index:1; padding:30px; font:normal 16px/200% "Microsoft YaHei"; color:#fff; }
+		.article dd .con p{ text-indent:24px; margin-bottom:20px;  }
+
+		#art2{ background:#7eb906;  }
+		#art3{ background:#d68432;  }
+		#art4{ background:#aa89d8;  }
+
+		.sideGuide{ position:fixed;  _position:absolute;  z-index:1; left:50px; top:150px; width:150px; background:#fff;  _top:expression(eval(document.documentElement.scrollTop+150))  }
+		.sideGuide h3{ height:40px; line-height:40px; background:#f50; font-weight:bold; color:#fff;   }
+		.sideGuide ul{ padding:10px 0;  }
+		.sideGuide li{ height:32px; line-height:32px; position:relative; border-bottom:1px solid #f4f4f4; vertical-align:middle;  }
+		.sideGuide li s{ display:none; position:absolute; top:0; left:-10px; width:10px; background:#555; height:32px;     }
+		.sideGuide li a{ display:block; color:#999;   }
+		.sideGuide li a:hover{ text-decoration:none; color:#f50;  }
+		.sideGuide li.on s{ display:block;  }
+		.sideGuide li.on a{ background:#f4f4f4; color:#333;  }
+		.ie6fixedTL{position:absolute;left:expression(eval(document.documentElement.scrollLeft));}
+	</style>
+	<div id="content">
+
+
+			<dl id="art1" class="article">
+				<dt><em>01</em>作者声明</dt>
+				<dd>
+						<div class="con">
+							<p>jquery纵向定位滚屏特效代码,是个人业余兴趣爱好写的，是基于jquery一个特效，没有任何封装，只是提供一种思考方式和实现方法，代码共享可随便使用，可能存在bug，但本人不承担任何修复bug的责任。</p>
+						</div>
+				</dd>
+				
+			</dl>
+
+			<dl id="art2" class="article">
+				<dt><em>02</em>电影新闻</dt>
+				<dd>
+						<div class="con">
+							<p>乔治·R·R·马丁用一部奇幻巨著笼络了亿万粉丝，终使得它被搬上小荧屏，却炮制出了瑰丽如电影的史诗之作。紧接着，它创造高收视，成为金球与艾美的常客，以大投资获得大回报，更吊足了“冰火迷”的胃口。自2011年暖春推出《权力的游戏》以来，第一季的浩瀚铺陈，第二季的华丽发展，至今年第三季的彪悍回归，HBO缔造了美剧史上的一段奇迹，赢得口碑与收视的大高潮。七国争战的壮烈、宫廷权谋的迂回、人性与兽性的激烈碰撞，以及活色生香的情色场面，使得它光彩熠熠，且一直呈“渐入佳境”的趋势。</p>
+							<p>如今《权力的游戏》带着它浩荡的异鬼军团，以及错综复杂的人际关系脉络，再次让观众一同见证辉煌，以彰显其恢弘与细腻，美丽与残酷。让我们在此用图解的形式回溯这部神作的“前世今生”，解读它的伟大，并且一同期待它华丽的后续吧！</p>
+							<p>这场“权力的游戏”，观众将奉陪到底！本专题将图解“冰火”数字图腾，换个轻松的角度，迎接冰火的回归。</p>
+						</div>
+				</dd>
+				
+			</dl>
+
+			<dl id="art3" class="article">
+				<dt><em>03</em>人物新闻</dt>
+				<dd>
+						<div class="con">
+							<p>乔治·R·R·马丁用一部奇幻巨著笼络了亿万粉丝，终使得它被搬上小荧屏，却炮制出了瑰丽如电影的史诗之作。紧接着，它创造高收视，成为金球与艾美的常客，以大投资获得大回报，更吊足了“冰火迷”的胃口。自2011年暖春推出《权力的游戏》以来，第一季的浩瀚铺陈，第二季的华丽发展，至今年第三季的彪悍回归，HBO缔造了美剧史上的一段奇迹，赢得口碑与收视的大高潮。七国争战的壮烈、宫廷权谋的迂回、人性与兽性的激烈碰撞，以及活色生香的情色场面，使得它光彩熠熠，且一直呈“渐入佳境”的趋势。</p>
+							<p>如今《权力的游戏》带着它浩荡的异鬼军团，以及错综复杂的人际关系脉络，再次让观众一同见证辉煌，以彰显其恢弘与细腻，美丽与残酷。让我们在此用图解的形式回溯这部神作的“前世今生”，解读它的伟大，并且一同期待它华丽的后续吧！</p>
+							<p>这场“权力的游戏”，观众将奉陪到底！本专题将图解“冰火”数字图腾，换个轻松的角度，迎接冰火的回归。</p>
+						</div>
+				</dd>
+				
+			</dl>
+
+			<dl id="art4" class="article">
+				<dt><em>04</em>电视新闻</dt>
+				<dd>
+						<div class="con">
+							<p>乔治·R·R·马丁用一部奇幻巨著笼络了亿万粉丝，终使得它被搬上小荧屏，却炮制出了瑰丽如电影的史诗之作。紧接着，它创造高收视，成为金球与艾美的常客，以大投资获得大回报，更吊足了“冰火迷”的胃口。自2011年暖春推出《权力的游戏》以来，第一季的浩瀚铺陈，第二季的华丽发展，至今年第三季的彪悍回归，HBO缔造了美剧史上的一段奇迹，赢得口碑与收视的大高潮。七国争战的壮烈、宫廷权谋的迂回、人性与兽性的激烈碰撞，以及活色生香的情色场面，使得它光彩熠熠，且一直呈“渐入佳境”的趋势。</p>
+							<p>如今《权力的游戏》带着它浩荡的异鬼军团，以及错综复杂的人际关系脉络，再次让观众一同见证辉煌，以彰显其恢弘与细腻，美丽与残酷。让我们在此用图解的形式回溯这部神作的“前世今生”，解读它的伟大，并且一同期待它华丽的后续吧！</p>
+							<p>这场“权力的游戏”，观众将奉陪到底！本专题将图解“冰火”数字图腾，换个轻松的角度，迎接冰火的回归。</p>
+						</div>
+				</dd>
+				
+			</dl>
+
+			<div class="sideGuide">
+				<h3>导航</h3>
+				<ul>
+					<li class="on"><a href="javascript:void(0)">作者声明</a><s></s></li>
+					<li><a href="javascript:void(0)">电影新闻</a><s></s></li>
+					<li><a href="javascript:void(0)">人物新闻</a><s></s></li>
+					<li><a href="javascript:void(0)">电视新闻</a><s></s></li>
+				</ul>
+			</div>
+
+
+<script type="text/javascript"> 
+
+(function($){
+
+	var goTo = $(".article");
+	var guide = $(".sideGuide");
+	var guideLi = $(".sideGuide li");
+
+	var index=0;
+	var direct=0; 
+	
+	//设置宽高
+	var resetFun = function(){ goTo.each(function(){  $(this).height( $(window).height() ) }); }
+	resetFun();
+
+	//屏幕滚动
+	var goToFun = function(){ 
+		direct=0; 
+		if(index<0){ index=0; return }
+		if(index>=guideLi.size()){ index=guideLi.size()-1; return }
+		$("html,body").stop().animate({ scrollTop:$(window).height()*index },300,"swing",function(){direct=0; }); guideLi.removeClass("on").eq(index).addClass("on");  
+	}
+	
+	guideLi.each(function(i){ $(this).click(function(){  index=guideLi.index( $(this) ); goToFun(); }) });
+
+	$(window).resize(function(){ resetFun() });
+
+
+	/* 滚轮事件 */ 
+	var scrollFunc=function(e){ 
+		e=e || window.event; 
+		if(e.wheelDelta){ direct+= (-e.wheelDelta/120); }else if(e.detail){ direct+=e.detail/3 ; } 
+		
+		if( direct>=8 ){ goToFun( index++ ) }
+		if( direct<=-8 ){ goToFun( index-- ) }
+	} 
+	if( document.addEventListener){ document.addEventListener('DOMMouseScroll',scrollFunc,false); }
+	 window.onmousewheel=document.onmousewheel=scrollFunc; 
+
+})(jQuery);
+</script>
+
+	</div>
+
+</body>
+</html>

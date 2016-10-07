@@ -1,0 +1,441 @@
+{
+  "count": 6,
+  "start": 0,
+  "total": 25,
+  "subjects": [
+    {
+      "rating": {
+        "max": 10,
+        "average": 7.6,
+        "stars": "40",
+        "min": 0
+      },
+      "genres": [
+        "动作",
+        "科幻",
+        "冒险"
+      ],
+      "title": "星际迷航3：超越星辰",
+      "casts": [
+        {
+          "alt": "https://movie.douban.com/celebrity/1053621/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/545.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/545.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/545.jpg"
+          },
+          "name": "克里斯·派恩",
+          "id": "1053621"
+        },
+        {
+          "alt": "https://movie.douban.com/celebrity/1041010/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/1364569064.71.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/1364569064.71.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/1364569064.71.jpg"
+          },
+          "name": "扎克瑞·昆图",
+          "id": "1041010"
+        },
+        {
+          "alt": "https://movie.douban.com/celebrity/1047985/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/1361267503.33.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/1361267503.33.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/1361267503.33.jpg"
+          },
+          "name": "佐伊·索尔达娜",
+          "id": "1047985"
+        }
+      ],
+      "collect_count": 29022,
+      "original_title": "Star Trek Beyond",
+      "subtype": "movie",
+      "directors": [
+        {
+          "alt": "https://movie.douban.com/celebrity/1290066/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/20902.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/20902.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/20902.jpg"
+          },
+          "name": "林诣彬",
+          "id": "1290066"
+        }
+      ],
+      "year": "2016",
+      "images": {
+        "small": "https://img3.doubanio.com/view/movie_poster_cover/ipst/public/p2377455123.jpg",
+        "large": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2377455123.jpg",
+        "medium": "https://img3.doubanio.com/view/movie_poster_cover/spst/public/p2377455123.jpg"
+      },
+      "alt": "https://movie.douban.com/subject/22939161/",
+      "id": "22939161"
+    },
+    {
+      "rating": {
+        "max": 10,
+        "average": 7.4,
+        "stars": "40",
+        "min": 0
+      },
+      "genres": [
+        "动作",
+        "悬疑",
+        "惊悚"
+      ],
+      "title": "谍影重重5",
+      "casts": [
+        {
+          "alt": "https://movie.douban.com/celebrity/1054443/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/620.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/620.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/620.jpg"
+          },
+          "name": "马特·达蒙",
+          "id": "1054443"
+        },
+        {
+          "alt": "https://movie.douban.com/celebrity/1047994/",
+          "avatars": {
+            "small": "https://img1.doubanio.com/img/celebrity/small/259.jpg",
+            "large": "https://img1.doubanio.com/img/celebrity/large/259.jpg",
+            "medium": "https://img1.doubanio.com/img/celebrity/medium/259.jpg"
+          },
+          "name": "汤米·李·琼斯",
+          "id": "1047994"
+        },
+        {
+          "alt": "https://movie.douban.com/celebrity/1233154/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/1427204716.36.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/1427204716.36.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/1427204716.36.jpg"
+          },
+          "name": "艾丽西亚·维坎德",
+          "id": "1233154"
+        }
+      ],
+      "collect_count": 69563,
+      "original_title": "Jason Bourne",
+      "subtype": "movie",
+      "directors": [
+        {
+          "alt": "https://movie.douban.com/celebrity/1025193/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/9714.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/9714.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/9714.jpg"
+          },
+          "name": "保罗·格林格拉斯",
+          "id": "1025193"
+        }
+      ],
+      "year": "2016",
+      "images": {
+        "small": "https://img3.doubanio.com/view/movie_poster_cover/ipst/public/p2375019545.jpg",
+        "large": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2375019545.jpg",
+        "medium": "https://img3.doubanio.com/view/movie_poster_cover/spst/public/p2375019545.jpg"
+      },
+      "alt": "https://movie.douban.com/subject/26266072/",
+      "id": "26266072"
+    },
+    {
+      "rating": {
+        "max": 10,
+        "average": 6.7,
+        "stars": "35",
+        "min": 0
+      },
+      "genres": [
+        "喜剧",
+        "动画",
+        "冒险"
+      ],
+      "title": "冰川时代5：星际碰撞",
+      "casts": [
+        {
+          "alt": "https://movie.douban.com/celebrity/1035648/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/8176.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/8176.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/8176.jpg"
+          },
+          "name": "西蒙·佩吉",
+          "id": "1035648"
+        },
+        {
+          "alt": "https://movie.douban.com/celebrity/1326968/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/1361845924.56.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/1361845924.56.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/1361845924.56.jpg"
+          },
+          "name": "洁茜J ",
+          "id": "1326968"
+        },
+        {
+          "alt": "https://movie.douban.com/celebrity/1027262/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/5082.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/5082.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/5082.jpg"
+          },
+          "name": "杰西·泰勒·弗格森",
+          "id": "1027262"
+        }
+      ],
+      "collect_count": 22769,
+      "original_title": "Ice Age: Collision Course",
+      "subtype": "movie",
+      "directors": [
+        {
+          "alt": "https://movie.douban.com/celebrity/1299248/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/47476.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/47476.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/47476.jpg"
+          },
+          "name": "麦克·特米尔",
+          "id": "1299248"
+        },
+        {
+          "alt": "https://movie.douban.com/celebrity/1304031/",
+          "avatars": {
+            "small": "https://img1.doubanio.com/f/movie/ca527386eb8c4e325611e22dfcb04cc116d6b423/pics/movie/celebrity-default-small.png",
+            "large": "https://img3.doubanio.com/f/movie/63acc16ca6309ef191f0378faf793d1096a3e606/pics/movie/celebrity-default-large.png",
+            "medium": "https://img1.doubanio.com/f/movie/8dd0c794499fe925ae2ae89ee30cd225750457b4/pics/movie/celebrity-default-medium.png"
+          },
+          "name": "加仑·T·楚",
+          "id": "1304031"
+        }
+      ],
+      "year": "2016",
+      "images": {
+        "small": "https://img1.doubanio.com/view/movie_poster_cover/ipst/public/p2365823697.jpg",
+        "large": "https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2365823697.jpg",
+        "medium": "https://img1.doubanio.com/view/movie_poster_cover/spst/public/p2365823697.jpg"
+      },
+      "alt": "https://movie.douban.com/subject/25797778/",
+      "id": "25797778"
+    },
+    {
+      "rating": {
+        "max": 10,
+        "average": 7.4,
+        "stars": "40",
+        "min": 0
+      },
+      "genres": [
+        "剧情",
+        "动作",
+        "科幻"
+      ],
+      "title": "寄生兽",
+      "casts": [
+        {
+          "alt": "https://movie.douban.com/celebrity/1315737/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/50940.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/50940.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/50940.jpg"
+          },
+          "name": "染谷将太",
+          "id": "1315737"
+        },
+        {
+          "alt": "https://movie.douban.com/celebrity/1014844/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/16385.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/16385.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/16385.jpg"
+          },
+          "name": "深津绘里",
+          "id": "1014844"
+        },
+        {
+          "alt": "https://movie.douban.com/celebrity/1275733/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/13872.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/13872.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/13872.jpg"
+          },
+          "name": "桥本爱",
+          "id": "1275733"
+        }
+      ],
+      "collect_count": 51442,
+      "original_title": "寄生獣",
+      "subtype": "movie",
+      "directors": [
+        {
+          "alt": "https://movie.douban.com/celebrity/1301398/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/53321.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/53321.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/53321.jpg"
+          },
+          "name": "山崎贵",
+          "id": "1301398"
+        }
+      ],
+      "year": "2014",
+      "images": {
+        "small": "https://img3.doubanio.com/view/movie_poster_cover/ipst/public/p2375921261.jpg",
+        "large": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2375921261.jpg",
+        "medium": "https://img3.doubanio.com/view/movie_poster_cover/spst/public/p2375921261.jpg"
+      },
+      "alt": "https://movie.douban.com/subject/25774050/",
+      "id": "25774050"
+    },
+    {
+      "rating": {
+        "max": 10,
+        "average": 5,
+        "stars": "25",
+        "min": 0
+      },
+      "genres": [
+        "剧情",
+        "爱情"
+      ],
+      "title": "我们的十年",
+      "casts": [
+        {
+          "alt": "https://movie.douban.com/celebrity/1275620/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/1460551151.6.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/1460551151.6.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/1460551151.6.jpg"
+          },
+          "name": "赵丽颖",
+          "id": "1275620"
+        },
+        {
+          "alt": "https://movie.douban.com/celebrity/1275913/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/53204.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/53204.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/53204.jpg"
+          },
+          "name": "乔任梁",
+          "id": "1275913"
+        },
+        {
+          "alt": "https://movie.douban.com/celebrity/1313603/",
+          "avatars": {
+            "small": "https://img1.doubanio.com/img/celebrity/small/1411650601.88.jpg",
+            "large": "https://img1.doubanio.com/img/celebrity/large/1411650601.88.jpg",
+            "medium": "https://img1.doubanio.com/img/celebrity/medium/1411650601.88.jpg"
+          },
+          "name": "吴映洁",
+          "id": "1313603"
+        }
+      ],
+      "collect_count": 1924,
+      "original_title": "我们的十年",
+      "subtype": "movie",
+      "directors": [
+        {
+          "alt": "https://movie.douban.com/celebrity/1290574/",
+          "avatars": {
+            "small": "https://img1.doubanio.com/img/celebrity/small/21289.jpg",
+            "large": "https://img1.doubanio.com/img/celebrity/large/21289.jpg",
+            "medium": "https://img1.doubanio.com/img/celebrity/medium/21289.jpg"
+          },
+          "name": "马伟豪",
+          "id": "1290574"
+        },
+        {
+          "alt": "https://movie.douban.com/celebrity/1343168/",
+          "avatars": {
+            "small": "https://img1.doubanio.com/f/movie/ca527386eb8c4e325611e22dfcb04cc116d6b423/pics/movie/celebrity-default-small.png",
+            "large": "https://img3.doubanio.com/f/movie/63acc16ca6309ef191f0378faf793d1096a3e606/pics/movie/celebrity-default-large.png",
+            "medium": "https://img1.doubanio.com/f/movie/8dd0c794499fe925ae2ae89ee30cd225750457b4/pics/movie/celebrity-default-medium.png"
+          },
+          "name": "刘海",
+          "id": "1343168"
+        }
+      ],
+      "year": "2016",
+      "images": {
+        "small": "https://img3.doubanio.com/view/movie_poster_cover/ipst/public/p2375677172.jpg",
+        "large": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2375677172.jpg",
+        "medium": "https://img3.doubanio.com/view/movie_poster_cover/spst/public/p2375677172.jpg"
+      },
+      "alt": "https://movie.douban.com/subject/25908065/",
+      "id": "25908065"
+    },
+    {
+      "rating": {
+        "max": 10,
+        "average": 7.2,
+        "stars": "35",
+        "min": 0
+      },
+      "genres": [
+        "剧情",
+        "动作",
+        "运动"
+      ],
+      "title": "铁拳",
+      "casts": [
+        {
+          "alt": "https://movie.douban.com/celebrity/1048002/",
+          "avatars": {
+            "small": "https://img1.doubanio.com/img/celebrity/small/12737.jpg",
+            "large": "https://img1.doubanio.com/img/celebrity/large/12737.jpg",
+            "medium": "https://img1.doubanio.com/img/celebrity/medium/12737.jpg"
+          },
+          "name": "杰克·吉伦哈尔",
+          "id": "1048002"
+        },
+        {
+          "alt": "https://movie.douban.com/celebrity/1053567/",
+          "avatars": {
+            "small": "https://img1.doubanio.com/img/celebrity/small/40097.jpg",
+            "large": "https://img1.doubanio.com/img/celebrity/large/40097.jpg",
+            "medium": "https://img1.doubanio.com/img/celebrity/medium/40097.jpg"
+          },
+          "name": "福里斯特·惠特克",
+          "id": "1053567"
+        },
+        {
+          "alt": "https://movie.douban.com/celebrity/1053587/",
+          "avatars": {
+            "small": "https://img1.doubanio.com/img/celebrity/small/538.jpg",
+            "large": "https://img1.doubanio.com/img/celebrity/large/538.jpg",
+            "medium": "https://img1.doubanio.com/img/celebrity/medium/538.jpg"
+          },
+          "name": "瑞秋·麦克亚当斯",
+          "id": "1053587"
+        }
+      ],
+      "collect_count": 19472,
+      "original_title": "Southpaw",
+      "subtype": "movie",
+      "directors": [
+        {
+          "alt": "https://movie.douban.com/celebrity/1013907/",
+          "avatars": {
+            "small": "https://img3.doubanio.com/img/celebrity/small/1459145342.51.jpg",
+            "large": "https://img3.doubanio.com/img/celebrity/large/1459145342.51.jpg",
+            "medium": "https://img3.doubanio.com/img/celebrity/medium/1459145342.51.jpg"
+          },
+          "name": "安东尼·福奎阿",
+          "id": "1013907"
+        }
+      ],
+      "year": "2015",
+      "images": {
+        "small": "https://img3.doubanio.com/view/movie_poster_cover/ipst/public/p2376693720.jpg",
+        "large": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2376693720.jpg",
+        "medium": "https://img3.doubanio.com/view/movie_poster_cover/spst/public/p2376693720.jpg"
+      },
+      "alt": "https://movie.douban.com/subject/5446197/",
+      "id": "5446197"
+    }
+  ],
+  "title": "正在上映的电影-北京"
+}

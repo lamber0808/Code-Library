@@ -1,0 +1,42 @@
+1、获取请求报文体中的参数body-parse
+	https://www.npmjs.com/package/body-parser
+	
+	使用步骤：
+	1、 npm install body-parse
+	2、在 app.js载入body-parser
+		var bodyparse = require('body-parse');
+	    app.use(bodyparse());
+		
+	3、在post请求对应的方法 中可以使用req.body.属性名称来获取属性值
+	(req,res)=>{
+	  var vname = req.body.vname;
+	}
+	
+2、服务器设置express-session
+  https://www.npmjs.com/package/express-session
+  步骤： 1、npm install express-session
+
+
+3、图片生成框架: https://github.com/GeorgeChan/captchapng
+https://www.npmjs.com/package/captchapng
+
+  步骤：1、npm install captchapng
+  2、生成验证码并且响应
+  let vcode = parseInt(Math.random()*9000+1000);
+
+	let captchapng = require('captchapng');
+
+	let p = new captchapng(80,30,vcode); // width,height,numeric captcha 
+    p.color(0, 0, 0, 0);  // First color: background (red, green, blue, alpha) 
+    p.color(80, 80, 80, 255); // Second color: paint (red, green, blue, alpha) 
+
+    let img = p.getBase64();
+    let imgbase64 = new Buffer(img,'base64');
+    res.writeHead(200, {
+        'Content-Type': 'image/png'
+    });
+    res.end(imgbase64);
+  
+
+
+	

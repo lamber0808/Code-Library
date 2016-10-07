@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body ng-app='myapp'>
+<ul>
+    <li>
+        <a href="#/home">home</a>
+        <a ui-sref="home1">home2</a>
+        <a ui-sref="home3">home3</a>
+    </li>
+</ul>
+  <div ui-view></div>
+
+  <div ui-view='view2'></div>
+  <div ui-view='view3'></div>
+</body>
+</html>
+<script src='node_modules/angular/angular.js'></script>
+<script src='node_modules/angular-ui-router/release/angular-ui-router.js'></script>
+<script>
+    //基本做法就是配置
+    // 1.0设置模块，
+    // 2.0配置路由,
+    // 3.0设置控制器；
+
+    //1.0创建模块
+    var app=angular.module('myapp',['ui.router']);
+    //2.0配置路由 //中括号防止压缩变形；
+    app.config(['$stateProvider',function ($stateProvider) {
+        $stateProvider
+                .state('home',{
+                    url:'/home',
+                    template:'<h1>home</h1>'
+                })
+                //特点1：给home1起一个别名，配合ui-sref使用实现简单的单页面程序；
+                .state('home1',{
+                    url:'/home1',
+                    template:'<h1>home1</h1>'
+                })
+                //ui-routre特点2：一个页面可以设置多个ui-view,ui-route框架比较灵活；
+                .state('home3',{
+                    //views可以设置多个
+                    url:'/home3',
+                    views:{
+                        'view2':{
+                            template:'<h1>{{text}}</h1>',
+                            controller:'mycontroller'
+                        },
+                        'view3':{
+                            template:'<h1>home4</h1>'
+                        }
+                    }
+                })
+    }])
+    app.controller('mycontroller',function ($scope) {
+        $scope.text='home3'
+    })
+
+
+
+</script>

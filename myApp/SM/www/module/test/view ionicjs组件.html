@@ -1,0 +1,29 @@
+<ion-content>
+  <button ng-click="showPopup()">showPopup</button>
+  <button ng-click="showActionSheet()">showActionSheet</button>
+  <button ng-click="showModal()">showModal</button>
+  <button ng-click="openPopover()">openPopover</button>
+</ion-content>
+<script id="my-popover.html" type="text/ng-template">
+  <ion-popover-view>
+    <ion-header-bar>
+      <h1 class="title">我是标题</h1>
+    </ion-header-bar>
+    <ion-content>
+      这里的内容
+    </ion-content>
+  </ion-popover-view>
+</script>
+<script id="my-modal.html" type="text/ng-template">
+  <!-- 所有模态框的内容都写在这个ion-modal-view组件中 -->
+  <ion-modal-view>
+    <ion-header-bar>
+      <h1 class="title">我是标题</h1>
+    </ion-header-bar>
+    <ion-content>
+      <input type="button" ng-click="hideModal()" value="hideModal">
+      哈哈哈
+    </ion-content>
+  </ion-modal-view>
+
+</script>

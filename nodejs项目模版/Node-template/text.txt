@@ -1,0 +1,11 @@
+npn init                            //package.json
+npm install bower -g
+npm install gulp -g
+npm install nodemon -g             //Auto refresh repl
+npm install cross-env -g          //解决设置环境变量兼容
+npm install across-env --save-dev
+
+
+
+npm I bower –g                 //.bowerrc
+bower install jqeury
